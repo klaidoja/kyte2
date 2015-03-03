@@ -1,39 +1,91 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
 
-    <title>Soojuse hinna kalkulaator</title>
+  <title>Energiakalkulaator</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="dist/css/jumbotron-narrow.css" rel="stylesheet">
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="dist/css/justified-nav.css" rel="stylesheet">
+</head>
 
-  <body>
-
-    <div class="container">
-      <div class="header">
-        <h3 class="text-muted">Soojuse hinna kalkulaator</h3>
+<body>
+  <div class="container">
+    <div class="masthead">
+      <h3 class="text-muted">Energiakalkulaator</h3>
+    </div>
+    <div class="row">
+    <form class="form-horizontal">
+      <div class="col-lg-4">
+       <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <label for="puuliik" class="col-sm-2 control-label">Puuliik</label>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="puuliik">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
       </div>
+      <!-- <form class="form-horizontal"> -->
+        <div class="form-group">
+          <label for="niiskus" class="col-sm-2 control-label">Niiskus (%)*</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="niiskus" placeholder="Niiskus">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="kogus" class="col-sm-2 control-label">Kogus </label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="kogus" placeholder="kogus">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-4">
+      <p>kütteseade  </p>
+      <p>kasutegur  </p>
+    </div>
+    <div class="col-lg-4">
+    </div>
+  </div>
 
-      <div class="jumbotron">
-        <p class="lead">Na, wie geht's?</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <img class="center-block img-responsive" src="media/fireplace.png" alt="fireplace">
+  </div>
 
-      <footer class="footer">
-<!--         <p>&copy; Company 2014</p> -->
-      </footer>
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-lg-4">
+      <p>küttepuu hind</p>
+      <p>kütuse hind</p>
+      <p>hind kokku</p>
+    </div>
+    <div class="col-lg-4">
+    </div>
+    <div class="col-lg-4">
+      <h3>Soojuse hind</h3>
+    </div>
+  </div>
 
-    </div> <!-- /container -->
-  </body>
+  <!-- Site footer -->
+  <footer class="footer">
+<!--     <p>&copy; Company 2014</p> -->
+  </footer>
+
+</div> <!-- /container -->
+</body>
 </html>
