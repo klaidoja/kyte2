@@ -2,6 +2,9 @@ body {
   padding-top: 20px;
 }
 
+h3 {
+  margin-bottom: 30px;
+}
 .footer {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -19,15 +22,18 @@ body {
   font-size: 21px;
 }
 
-.form-control {
-  width: 30px;
-}
-
-
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 
 .img-responsive {
   float: "center";
+}
+
+.form-control {
+    width:120px;
+}
+
+.form-inline .form-group input {
+    width:120px;
 }
 
 .nav-justified {
