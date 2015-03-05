@@ -13,38 +13,39 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 
 <body>
 	<div class="container">
 		<div class="masthead">
-			<h3 class="text-muted">Energiakalkulaator</h3>
+			<h3 id="pealkiri" class="text-muted">Energiakalkulaator</h3>
 		</div>
 		<div class="row">
 			<div class="col-lg-4">
 				<form class="form-horizontal">
-				<div class="form-group">
-					<div class="dropdown">
-					<label>Puuliik</label>
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-							Puuliik
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="puuliik">
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Segapuu</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Okaspuu</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lehtpuu</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kuusk</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mänd</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kask</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Haab</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sang-Lepp</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hall-Lepp</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Saar</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tamm</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Puidupellet</a></li>
-						</ul>
-					</div>
+					<div class="form-group">
+						<div class="dropdown">
+							<label>Puuliik</label>
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								Vali liik
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="puuliik">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Segapuu</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Okaspuu</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lehtpuu</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kuusk</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mänd</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kask</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Haab</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sang-Lepp</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hall-Lepp</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Saar</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tamm</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Puidupellet</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="form-group">
 						<label for="niiskus" class="col-sm-2 control-label">Niiskus (%)*</label>
@@ -56,7 +57,7 @@
 				<form class="form-inline">
 					<div class="form-group">
 						<label>Kogus</label>
-						<input type="text" class="form-control" placeholder="kogus">
+						<input id="kogus" type="text" class="form-control" placeholder="kogus">
 					</div>  <div class="form-group">
 					<label>Ühik</label>
 					<input type="text" class="form-control" placeholder="ühik">
@@ -64,9 +65,33 @@
 			</form>
 		</div>
 
-		<div class="col-lg-4">
-			<p>kütteseade  </p>
-			<p>kasutegur  </p>
+		<div class="col-lg-4">		
+		<form class="form-horizontal">
+					<div class="form-group">
+						<div class="dropdown">
+							<label>Kütteseade</label>
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+								Vali seade
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2" id="kytteseade">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Halupuu katel</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pelleti katel</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ahi</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pliit</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kamin klaasuksega</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kamin lahtine</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kaugküte</a></li>
+						</ul>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="kasutegur" class="col-sm-2 control-label">Kasutegur</label>
+						<div class="col-sm-10">
+							<input class="form-control" id="kasutegur" placeholder="Kasutegur">
+						</div>
+					</div>
+				</form>
 		</div>
 
 

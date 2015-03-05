@@ -32,8 +32,16 @@ h3 {
     width:120px;
 }
 
+.form-inline {
+  padding-left: 1px;
+}
+
 .form-inline .form-group input {
     width:120px;
+}
+
+.control-label {
+  padding-left: 1px;
 }
 
 .nav-justified {
