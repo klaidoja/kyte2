@@ -26,8 +26,8 @@
 				<form class="form-horizontal">
 					<div class="form-group">
 						<div class="dropdown">
-							<label>Puuliik</label>
-							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<label for="dropdownMenu1" class="col-sm-2 control-label">Puuliik</label>
+							<button class="col-sm-3 btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
 								Vali liik
 								<span class="caret"></span>
 							</button>
@@ -56,7 +56,7 @@
 				</form>
 				<form class="form-inline">
 					<div class="form-group">
-						<label>Kogus</label>
+						<label for="kogus">Kogus</label>
 						<input id="kogus" type="text" class="form-control" placeholder="kogus">
 					</div>  <div class="form-group">
 					<label>Ühik</label>
@@ -66,15 +66,15 @@
 		</div>
 
 		<div class="col-lg-4">		
-		<form class="form-horizontal">
-					<div class="form-group">
-						<div class="dropdown">
-							<label>Kütteseade</label>
-							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
-								Vali seade
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2" id="kytteseade">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="dropdown">
+						<label for="dropdownMenu2" class="col-sm-2 control-label">Kütteseade</label>
+						<button class="col-sm-3 btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+							Vali seade
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2" id="kytteseade">
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Halupuu katel</a></li>
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pelleti katel</a></li>
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ahi</a></li>
@@ -83,15 +83,15 @@
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kamin lahtine</a></li>
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kaugküte</a></li>
 						</ul>
-						</div>
 					</div>
-					<div class="form-group">
-						<label for="kasutegur" class="col-sm-2 control-label">Kasutegur</label>
-						<div class="col-sm-10">
-							<input class="form-control" id="kasutegur" placeholder="Kasutegur">
-						</div>
+				</div>
+				<div class="form-group">
+					<label for="kasutegur" class="col-sm-2 control-label">Kasutegur</label>
+					<div class="col-sm-10">
+						<input class="form-control" id="kasutegur" placeholder="Kasutegur">
 					</div>
-				</form>
+				</div>
+			</form>
 		</div>
 
 

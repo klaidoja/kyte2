@@ -32,16 +32,35 @@ h3 {
     width:120px;
 }
 
-.form-inline {
-  padding-left: 1px;
+/* layout of input fields */
+#dropdownMenu1 {
+    margin-left: 16px;
+}
+
+#dropdownMenu2  {
+    margin-left: 30px;
+}
+
+#kasutegur {
+    margin-left: 15px;
+}
+
+#kasutegur {
+    margin-left: 15px;
+}
+
+.form-horizontal .control-label {
+    text-align:left;
+}
+
+
+.form-inline .control-label{
+text-align:left;
+background-color:#ffa;
 }
 
 .form-inline .form-group input {
     width:120px;
-}
-
-.control-label {
-  padding-left: 1px;
 }
 
 .nav-justified {
