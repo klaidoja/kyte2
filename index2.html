@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Energiakalkulaator</title>
+
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dist/css/narrow-custom.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body  >
+  <div class="container">
+    <p class="navbar-brand" href="#">Energiakalkulaator</p>
+  </div>
+
+  <div class="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-left">
+          <div class="panel panel-success">
+            <div class="panel-body">
+             <form class="form-horizontal">
+              <div class="form-group">
+                <div class="dropdown">
+                  <label for="dropdownMenu2" class="col-sm-2 control-label">Kütteseade</label>
+                  <button class="col-sm-10 btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                    Vali seade
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2" id="kytteseade">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Halupuu katel</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pelleti katel</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ahi</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pliit</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kamin klaasuksega</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kamin lahtine</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kaugküte</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="kasutegur" class="col-sm-2 control-label">Kasutegur</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="kasutegur" placeholder="Kasutegur">
+                </div>
+              </div>
+                         </div>
+        </div>
+            </form>
+                      <div class="panel panel-success">
+            <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div class="dropdown">
+                  <label for="dropdownMenu1" class="col-sm-2 control-label">Puuliik</label>
+                  <button class="col-sm-3 btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Vali liik
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="puuliik">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Segapuu</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Okaspuu</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lehtpuu</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kuusk</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mänd</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kask</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Haab</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sang-Lepp</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hall-Lepp</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Saar</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tamm</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Puidupellet</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="niiskus" class="col-sm-2 control-label">Niiskus</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="niiskus" placeholder="Niiskus">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="kogus" class="col-sm-2 control-label">Kogus</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="kogus" placeholder="Kogus">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="yhik" class="col-sm-2 control-label">Ühik</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="yhik" placeholder="Ühik">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+            <div class="col-lg-6">
+        <div class="panel panel-success">
+          <div class="panel-body">
+            <form class="form-horizontal">
+             <div class="form-group">
+              <label for="amort" class="col-sm-2 control-label">Kütteseadme amort</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="amort" placeholder="Amort">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tegevuskulud" class="col-sm-2 control-label">Tegevuskulud</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="tegevuskulud" placeholder="kulud">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="soojatransport" class="col-sm-2 control-label">Soojatransport</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="soojatransport" placeholder="transport">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="kasum" class="col-sm-2 control-label">Ettevõtte kasum</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="kasum" placeholder="kasum">
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+         <div class="col-lg-6 text-center">
+        <img id="fireplace" class="center-block img-responsive" src="media/fireplace.png" alt="fireplace">
+      </div>
+
+
+    <div class="col-lg-6">
+      <div class="panel panel-danger">
+       <div class="panel-heading">
+        <h3 class="panel-title">Kütuse hind</h3>
+      </div>
+      <div class="panel-body">
+       <p>Energia</p>
+       <p>Energia kokku</p>
+     </div>
+   </div>
+   <div class="panel panel-success">
+     <div class="panel-heading">
+      <h3 class="panel-title">Soojuse hind</h3>
+    </div>
+    <div class="panel-body">
+      <p>Soojuse hind</p>
+      <p>Soojuse lõpphind</p>
+    </div>
+  </div>
+</div>
+</div> <!-- /container -->
+</div>
+
+<div class="section3">
+  <div class="container">
+    <h3>Selgitus</h3>
+    <p>Vaikeväärtused on võetud balblab tabelitest, mille kohaselt bla</p>
+    <p>Ettevõtte kasumi all on mõeldud blabla.</p>
+    <h3>Projektist</h3>
+    <p>Lorem ipsum dolor sit amet, vim dico perpetua consequuntur an, in iisque appetere nam. Ea lorem fierent est. Ei postea possit duo, vim id sadipscing philosophia consequuntur. Ei pri deseruisse consetetur contentiones.
+    </p>
+
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>

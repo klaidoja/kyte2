@@ -1,0 +1,132 @@
+body {
+	background-color: #ffffff;
+}
+
+p {
+	font: 300 1.375em/1.5em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000;
+	font-size: 1.125em;
+
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.navbar-brand{
+	font-size: 28px;
+    color: #637F94;
+}
+
+.navbar-default {
+	background-color: #5DBCD2;
+	border-color: #5DBCD2;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.form-horizontal .control-label {
+    text-align:left;
+    color: #222;
+}
+
+.panel-body {
+	padding: 8px;
+}
+
+.input {
+	margin-left: 30px;
+}
+
+.form-control {
+	margin-left: 30px;
+	width: 70%;
+}
+
+.btn {
+display: block;
+width: 54.2%;
+margin-left: 44px;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+.box {
+background-color: #f9f9f9;
+color: #666;
+margin-bottom: 20px;
+padding: 15px;
+border-radius: 4px;
+}
+
+label {
+	font-weight: 600;
+}
+
+h3.panel-title {
+   font-weight: 600;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+#pealkiri {
+	margin-top: 5px;
+	margin-bottom: 30px;
+	color: #A0BCC7;
+}
+
+.section2 {
+    background-color: #f9f9f9;
+}
+
+.section3 {
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+
+.panel {
+	margin-bottom: 8px;
+	background-color: #f9f9f9;
+	border-color: #f9f9f9;
+	box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
