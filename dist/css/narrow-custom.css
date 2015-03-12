@@ -9,6 +9,11 @@ p {
 
 }
 
+img{
+	max-width:320px;
+	max-height: 320px;
+ }
+
 
 .container {
 	margin: 0 auto;
@@ -36,6 +41,7 @@ p {
 
 .form-control {
 	width: 75%;
+	margin-left: 20px;
 }
 
 
