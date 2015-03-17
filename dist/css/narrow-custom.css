@@ -38,9 +38,13 @@ img{
 	text-align:left;
 	color: #222;
 }
+.form-inline .control-label {
+text-align: left;
+color: #222;
+}
 
 .form-control {
-	width: 75%;
+	width: 80%;
 	margin-left: 20px;
 }
 
@@ -51,10 +55,10 @@ img{
 .selected {padding-right:10px;}
 .option {width:100%;}
 
-.input-group-btn .btn {
-	width: 75%
+/*.input-group-btn .btn {
+	width: 80%
 }
-
+*/
 label {
 	font-weight: 600;
 }
@@ -86,9 +90,23 @@ h3.panel-title {
 	margin-bottom: 50px;
 }
 
-* {
-	border-radius: 0 !important;
+#yhik {
 }
+
+.input-group {
+	width: 85%;
+}
+
+.input-group-addon {
+ width: 70px;
+ padding-left: 30px; }
+
+
+
+/**	border-radius: 0 !important;
+}*/
+
+
 /*
 
 #seade, #puuliik{

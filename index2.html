@@ -68,86 +68,99 @@
                 </select>
               </div>
             </div>
-
-
             <div class="form-group">
               <label for="niiskus" class="col-sm-2 control-label">Niiskus</label>
               <div class="col-sm-10">
-                <input class="form-control" id="niiskus" placeholder="Niiskus">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="niiskus" placeholder="niiskus">
+                  <span class="input-group-addon">%</span>
+                </div>
               </div>
             </div>
-            <div class="form-group">
-              <label for="kogus" class="col-sm-2 control-label">Kogus</label>
-              <div class="col-sm-10">
-                <input class="form-control" id="kogus" placeholder="Kogus">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="yhik" class="col-sm-2 control-label">Ühik</label>
-              <div class="col-sm-10">
-                <input class="form-control" id="yhik" placeholder="Ühik">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class ="tulp-2">
-          <form class="form-horizontal">
-           <div class="form-group">
-            <label for="amort" class="col-sm-2 control-label">Kütteseadme amort</label>
-            <div id="lisakulud" class="col-sm-10">
-              <input class="form-control" id="amort" placeholder="Amort">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="tegevuskulud" class="col-sm-2 control-label">Tegevuskulud</label>
-            <div class="col-sm-10">
-              <input class="form-control" id="tegevuskulud" placeholder="kulud">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="soojatransport" class="col-sm-2 control-label">Soojatransport</label>
-            <div class="col-sm-10">
-              <input class="form-control" id="soojatransport" placeholder="transport">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="kasum" class="col-sm-2 control-label">Ettevõtte kasum</label>
-            <div class="col-sm-10">
-              <input class="form-control" id="kasum" placeholder="kasum">
-            </div>
-          </div>
-
         </form>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="kogus" class="col-sm-2 control-label">Kogus</label>
+            <div class="col-sm-10">
+              <input class="form-control" id="kogus" placeholder="Kogus">
+            </div>
+          </div>
+<!--           <div class="form-group">
+            <label for="yhik" class="sr-only">Ühik</label>
+            <div class="col-sm-10">
+              <input class="form-control" id="yhik" placeholder="Ühik">
+            </div>
+          </div> -->
+          <div class="form-group">
+              <label for="yhik" class="sr-only">Ühik</label>
+                <select class="form-control" id="yhik">
+                  <option >RM</option>
+                  <option >Kast</option>
+                  <option >Kuhi</option>
+                </select>
+            </div>
+        </form>
+
       </div>
     </div>
-  </div>
-  <div class="row">
-   <div class="col-lg-6 text-center">
-    <img id="fireplace" class="center-block img-responsive" src="media/fireplace.png" alt="fireplace">
-  </div>
+    <div class="col-lg-6">
+      <div class ="tulp-2">
+        <form class="form-horizontal">
+         <div class="form-group">
+          <label for="amort" class="col-sm-2 control-label">Kütteseadme amort</label>
+          <div id="lisakulud" class="col-sm-10">
+            <input class="form-control" id="amort" placeholder="Amort">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="tegevuskulud" class="col-sm-2 control-label">Tegevuskulud</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="tegevuskulud" placeholder="kulud">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="soojatransport" class="col-sm-2 control-label">Soojatransport</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="soojatransport" placeholder="transport">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="kasum" class="col-sm-2 control-label">Ettevõtte kasum</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="kasum" placeholder="kasum">
+          </div>
+        </div>
 
+      </form>
 
-
-  <div class="col-lg-6">
-    <div class="panel panel-danger">
-     <div class="panel-heading">
-      <h3 class="panel-title">Kütuse hind</h3>
     </div>
-    <div class="panel-body">
-     <p>Energia</p>
-     <p>Energia kokku</p>
-   </div>
- </div>
- <div class="panel panel-success">
+  </div>
+</div>
+<div class="row">
+ <div class="col-lg-6 text-center">
+  <img id="fireplace" class="center-block img-responsive" src="media/fireplace.png" alt="fireplace">
+</div>
+
+
+
+<div class="col-lg-6">
+  <div class="panel panel-danger">
    <div class="panel-heading">
-    <h3 class="panel-title">Soojuse hind</h3>
+    <h3 class="panel-title">Kütuse hind</h3>
   </div>
   <div class="panel-body">
-    <p>Soojuse hind</p>
-    <p>Soojuse lõpphind</p>
-  </div>
+   <p>Energia</p>
+   <p>Energia kokku</p>
+ </div>
+</div>
+<div class="panel panel-success">
+ <div class="panel-heading">
+  <h3 class="panel-title">Soojuse hind</h3>
+</div>
+<div class="panel-body">
+  <p>Soojuse hind</p>
+  <p>Soojuse lõpphind</p>
+</div>
 </div>
 </div>
 </div> <!-- /container -->
@@ -160,8 +173,6 @@
     <p>Ettevõtte kasumi all on mõeldud blabla.</p>
     <h3>Projektist</h3>
     <p>Lorem ipsum dolor sit amet, vim dico perpetua consequuntur an, in iisque appetere nam. Ea lorem fierent est. Ei postea possit duo, vim id sadipscing philosophia consequuntur. Ei pri deseruisse consetetur contentiones.
-    </p>
-
 
   </div>
 </div>
