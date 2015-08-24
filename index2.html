@@ -31,26 +31,26 @@
               <label for="seade" class="col-sm-2 control-label">Kütteseade</label>
               <div class="col-sm-10">
                 <select class="form-control" id="seade">
-                  <option value="media/bullerjan.png">Halupuu katel</option>
-                  <option value="media/fireplace.png">Pelleti katel</option>
-                  <option value="media/bullerjan.png">Ahi</option>
-                  <option value="media/fireplace.png">Pliit</option>
-                  <option value="media/bullerjan.png">Kamin klaasuksega</option>
-                  <option value="media/fireplace.png">Kamin lahtine</option>
-                  <option value="media/kaugkyte.png">Kaugküte</option>
+                  <option value="media/bullerjan.png" data-kasutegur="80 %" >Halupuu katel</option>
+                  <option value="media/fireplace.png" data-kasutegur="90 %">Pelleti katel</option>
+                  <option value="media/bullerjan.png" data-kasutegur="75 %">Ahi</option>
+                  <option value="media/fireplace.png" data-kasutegur="45 %">Pliit</option>
+                  <option value="media/bullerjan.png" data-kasutegur="70 %">Kamin klaasuksega</option>
+                  <option value="media/fireplace.png" data-kasutegur="25 %">Kamin lahtine</option>
+                  <option value="media/kaugkyte.png" data-kasutegur="90 %">Kaugküte</option>
                 </select>
               </div>
             </div>
             <div class="form-group">
               <label for="kasutegur" class="col-sm-2 control-label">Kasutegur</label>
               <div class="col-sm-10">
-                <input class="form-control" id="kasutegur" placeholder="Kasutegur">
+                <input class="form-control" id="kasutegur" value="80 %" placeholder="Kasutegur">
               </div>
             </div>
           </form>
           <form class="form-horizontal">
             <div class="form-group">
-              <label for="puuliik" class="col-sm-2 control-label">Kütteseade</label>
+              <label for="puuliik" class="col-sm-2 control-label">Kütus</label>
               <div class="col-sm-10">
                 <select class="form-control" id="puuliik">
                   <option value="media/bullerjan.png">Segapuu</option>
@@ -95,8 +95,10 @@
               <label for="yhik" class="sr-only">Ühik</label>
                 <select class="form-control" id="yhik">
                   <option >RM</option>
-                  <option >Kast</option>
-                  <option >Kuhi</option>
+                  <option >tm</option>
+                  <option >pm kuubis</option>
+                  <option >kg</option>
+                  <option >tonn</option>
                 </select>
             </div>
         </form>
